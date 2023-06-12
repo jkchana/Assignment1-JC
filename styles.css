@@ -1683,7 +1683,7 @@ h4 a:hover {
 		display: block;
 		border-bottom: 10px solid  white; 
 		margin: auto;
-		width: 150%;				  
+		width: 50%;				  
 	}
 
 	details[open] summary:after { 

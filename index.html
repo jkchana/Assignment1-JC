@@ -1,0 +1,298 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+        <title>Jaskiran Chana</title>
+        <!-- External CSS styles -->
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <div class="header">
+        <!-- Navigation -->
+		<a href="index.html"><img src="images/logo.png" alt="Logo"style="border-style:none;width:110px;height:90px;"></a>
+        <div class="header-right">
+            <a class="active" href="index.html">MY STORY</a>
+            <a class="unactive" href="school.html">SCHOOL</a>
+            <a class="unactive" href="work.html">WORK</a>
+        </div>
+    </div>
+	
+    <body>
+		<!-- About Me Section-->
+		<div class="about-container">
+			<img src="images/about.png" alt="JaskiranChana">
+		</div>
+		
+		<!-- Reading & Writing Section-->		
+		<div class="row">
+			<div class="column">
+				<img src="images/booklist.png" alt="BookList">
+			</div>
+		
+			<div class="column-title">My Favourite Book Quotes</div>
+			<div class="column1">
+				“Someone who thinks death is the scariest thing doesn't know a thing about life.” ― Sue Monk Kidd, The Secrete Life of Bees
+			</div>
+			<div class="column2">
+				“It does not do to dwell on dreams and forget to live.” ― J.K. Rowling, Harry Potter and the Sorcerer's Stone
+			</div>
+			<div class="column3">
+				“Those who kept silent yesterday will remain silent tomorrow.” ― Élie Wiesel, Night
+			</div>
+			<div class="column4">
+				“Once a king or queen of Narnia, always a king or queen of Narnia.” ― C.S. Lewis, The Lion, the Witch and the Wardrobe
+			</div>
+			<div class="column5">
+				“They Open A Door And Enter A World” ― C.S. Lewis, The Lion, the Witch and the Wardrobe
+			</div>
+			<div class="column6">
+				“They didn't understand it, but like so many unfortunate events in life, just because you don't understand it doesn't mean it isn't so.” ― Lemony Snicket, The Bad Beginning
+			</div>
+			<div class="column7">
+				“There are many, many types of books in the world, which makes good sense, because there are many, many types of people, and everybody wants to read something different.” ― Lemony Snicket, The Bad Beginning
+			</div>
+		</div>
+        
+		<!-- Music Section -->
+		<div class="music-container">
+			<img src="images/music.png" alt="Music">
+		</div>
+		
+		<h3>Listen to Some of My Self-Created Piano Tunes</h3>
+		<p id="txtMusic">During my free time I enjoy practising the piano and creating my own tunes.
+			I have been practising using the Casio electric keyboard for almost 4 years.
+			Playing the piano reduce my stress, allow me to stay calm, and encourages me to be more creative.<br><br>
+			“There’s nothing remarkable about it. All one has to do is hit the right keys at the right time and the instrument plays itself.” – Johann Sebastian Bach
+		</p>
+		
+		<table>
+			<tr>
+				<td id="title1" class= "title" onclick="playMusic1()" style="width: 10px;">Piano Vol.1</td> 	
+				
+				<td>
+					<div id="cover1" class="music-cover-container";>
+						<img src="images/cover1.jpg" alt="MusicCover1">
+					</div>
+					<audio id="audio1" controls class="musicplayer1" style="padding-bottom:20px;">
+						<source src="audio/piano1.ogg" type="audio/ogg">
+						<source src="audio/piano1.mp3" type="audio/mpeg">
+						Audio not supported by current browser.
+					</audio>Sailing the Seas
+				</td>
+			</tr>
+			
+			<tr>
+				<td  id="title2" class= "title" onclick="playMusic2()">Piano Vol.2</td> 
+				
+				<td>
+					<div id="cover2" class="music-cover-container";>
+						<img src="images/cover2.jpg" alt="MusicCover2">
+					</div>
+					<audio id="audio2" controls class="musicplayer2" style="padding-bottom:20px;">
+						<source src="audio/piano2.ogg" type="audio/ogg">
+						<source src="audio/piano2.mp3" type="audio/mpeg">
+						Audio not supported by current browser.
+					</audio>The Dinning Hall 
+				</td>
+			</tr>
+			
+			<tr>
+				<td  id="title3" class= "title" onclick="playMusic3()">Piano Vol.3</td> 
+				
+				<td>	
+					<div id="cover3" class="music-cover-container";>
+						<img src="images/cover3.jpg" alt="MusicCover3">
+					</div>
+					<audio id="audio3" controls class="musicplayer3" style="text-align:center; padding-bottom:20px;">
+						<source src="audio/piano3.ogg" type="audio/ogg">
+						<source src="audio/piano3.mp3" type="audio/mpeg">
+						Audio not supported by current browser.
+					</audio>The Day Off
+				</td>
+			</tr>
+		</table>	
+	
+<script>
+function playMusic1() {
+	document.getElementById('audio1')
+    .style.display = "block";
+	document.getElementById('cover1')
+    .style.display = "block";
+	document.getElementById('audio2')
+    .style.display = "none";
+	document.getElementById('cover2')
+    .style.display = "none";
+	document.getElementById('audio3')
+    .style.display = "none";
+	document.getElementById('cover3')
+    .style.display = "none";
+  }
+function playMusic2() {
+	document.getElementById('audio2')
+    .style.display = "block";
+	document.getElementById('cover2')
+    .style.display = "block";
+	document.getElementById('audio1')
+    .style.display = "none";
+	document.getElementById('cover1')
+    .style.display = "none";
+		document.getElementById('audio3')
+    .style.display = "none";
+	document.getElementById('cover3')
+    .style.display = "none";
+  }
+function playMusic3() {
+	document.getElementById('audio3')
+    .style.display = "block";
+	document.getElementById('cover3')
+    .style.display = "block";
+	document.getElementById('audio1')
+    .style.display = "none";
+	document.getElementById('cover1')
+    .style.display = "none";
+	document.getElementById('audio2')
+    .style.display = "none";
+	document.getElementById('cover2')
+    .style.display = "none";
+  }
+</script>
+
+		<!-- Baking Section -->
+		<div class="baking-container">
+			<img src="images/baking.png" alt="Baking">
+		</div>
+
+		<h3>My Sweet Baking Creations</h3>
+		<p id="txtCenter">Another one of my interests includes baking. In general, baking and cooking is a big part of my life and with a larger family it’s even more important. 	Food brings us together as I get to work with my mom or siblings to prepare food. For the longest time my older sisters made me their personal sous chef but now as I’m older I get to experiment with flavours and decorate. As for the sous chef position…that’s been filled by my younger brother.<br>
+		</p>
+
+		<b id="txtBaking">My Baking List:</b>
+
+		<ol id="txtBaking">
+			<li>Vanilla Sponge Cake with a Strawberry and Mango Filling</li>
+			<li>Blueberry & Orange Cream Tart</li>
+			<li>Vanilla Sugar Cookies with Lemon Royal Icing</li>
+			<li>Pistachio and Pecan Cake with Cream Cheese Buttercream Icing</li>
+			<li>Vanilla Funfetti Birthday Cake with Strawberry Buttercream Icing</li>
+			<li>Vanilla, Cranberry, and Pistachio Sugar Cookies with Lemon Royal Icing</li>
+			<li>Coffee Cake with Chocolate and Vanilla Icing</li>
+			<li>Carrot Cake with Cream Cheese Icing</li>
+			<li>Vanilla Sugar Cookies with Orange Royal Icing</li>
+			<li>Apple Peach Crumble</li>
+			<li>Oreo and Chocolate Fudge Ice Cream Cake</li>
+		</ol> 
+		
+		<div class="responsive">
+			<div class="gallery">
+				<a target="_blank" href="baking1.jpg">
+					<img src="images/baking1.jpg" alt="Vanilla Cake" width="300" height="200">
+				</a>
+				<div class="desc">Vanilla Sponge Cake with a Strawberry and Mango Filling</div>
+			</div>
+		</div>
+
+		<div class="responsive">
+			<div class="gallery">
+				<a target="_blank" href="baking2.jpg">
+					<img src="images/baking2.jpg" alt="Tart" width="300" height="200">
+				</a>
+				<div class="desc">Blueberry & Orange Cream Tart</div>
+			</div>
+		</div>
+
+		<div class="responsive">
+			<div class="gallery">
+				<a target="_blank" href="baking3.jpg">
+					<img src="images/baking3.jpg" alt="Halloween Cookies" width="300" height="200">
+				</a>
+				<div class="desc">Vanilla Sugar Cookies with Lemon Royal Icing</div>
+			</div>
+		</div>
+
+		<div class="responsive">
+			<div class="gallery">
+				<a target="_blank" href="baking4.jpg">
+					<img src="images/baking4.jpg" alt="Pistachio Cake" width="300" height="200">
+				</a>
+				<div class="desc">Pistachio and Pecan Cake with Cream Cheese Buttercream Icing</div>
+			</div>
+		</div>
+
+		<div class="clearfix"></div>
+
+		<!-- Digital Art Section -->
+        <div class="digital-container">
+			<img src="images/digital.png" alt="Digital Art">
+		</div>
+
+		<h3 style="padding-top: 10px;">My Digital Art</h3>
+		<p id="txtCenter">When I am creating digital art I use my sister's iPad and Pencil as my digital canvas and use the Sketch app. At a younge age I have always enjoyed painting, drawing, and sketching so illustrating is exciting for me because it's different. </p>
+		<p id="txtCenter">During the summer months my family and I enjoy taking road trips, especially through British Columbia. We have not only explored Canada but have road tripped into the United States of America as well. Visiting places like Seattle,WA Portland,OR Sacramento,CA and San Jose,CA. Throughout the years I have been able to capture many moments with my Family and we have visited cities and locations in both British Columbia and Alberta. Road trips, visitng parks in BC, and nature has been a great way for me to practice my photography and gain inspirtation for Digital Art. </p>
+
+		<details  style="padding-bottom: 30px; margin-right:25%; margin-left:25%;"> 
+			<summary> My Big Adventures Across Canada</summary>		
+			<p>1. My Family and I travelled from British Columbia to Alberta. visiting destinations like Revelstoke, Banff, Calgary and Drumheller.<br><br>
+			   2. My Family and I explored Victoria for the 3rd time.<br><br>
+			   3. My Family and I travelled once again from British Columbia to Alberta. visiting Golden, Jasper, Banff, and Revelstoke.<br><br>
+			   4. My Family and I drove from Port Alberni, to Ucluelet, and then to Tofino.<br><br>
+	      	</p>
+		</details>
+
+		<h4>Check out more of my Digital Art on my Instagram Page<a target="_blank" href="https://www.instagram.com/digitalart_jchana/"><i> @DigitalArt_JChana</i></a></h4>
+
+		<div class="row-art">
+			<div class="column-art">
+				<img src="images/art1.PNG" alt="Snow on the Bridge" style="width:100%" onclick="myFunction(this);">
+			</div>
+			<div class="column-art">
+				<img src="images/art2.PNG" alt="Mountain Ranges" style="width:100%" onclick="myFunction(this);">
+			</div>
+			<div class="column-art">
+				<img src="images/art3.PNG" alt="Beach Day" style="width:100%" onclick="myFunction(this);">
+			</div>
+			<div class="column-art">
+				<img src="images/art4.PNG" alt="Blue Whale" style="width:100%" onclick="myFunction(this);">
+			</div>
+			<div class="column-art">
+				<img src="images/art5.PNG" alt="Lazy River" style="width:100%" onclick="myFunction(this);">
+			</div>
+		</div>
+
+		<div class="container-art">
+			<span onclick="this.parentElement.style.display='none'" class="btn-art">&times;</span>
+			<img id="expandedImg" style="width:50%">
+		</div>
+
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+
+		<footer>
+			<div class="footer">
+				<div class="footer-column-1">
+					<h5>USEFUL LINKS</h5>
+					<a href="index.html">My Story</a>
+					<a href="school.html">School</a>
+					<a href="work.html">Work</a>
+				</div>
+				
+				<div class="footer-column-2">
+					<a href="index.html"><img src="images/logo.png" alt="Logo"style="border-style:none;width:110px;height:90px;"></a>
+					<h6>Copyright &copy; 2023 Jaskiran Chana</h6>
+					<p><script>document.write ("Last Modified ", document.lastModified);</script></p>
+				</div>
+				
+				<div class="footer-column-3"> 
+					<h5>CONTACT</h5>
+					12666 72 Avenue Surrey, B.C. V3W 2M8
+					<a href="mailto:jaskiran.chana@student.kpu.ca">jaskiran.chana@student.kpu.ca</a>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
